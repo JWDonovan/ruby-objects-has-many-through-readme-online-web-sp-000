@@ -22,8 +22,8 @@ class Customer
   end
 
   def waiters
-    meals.select do |meal|
+    meals.collect do |meal|
       meal.waiter
-    end
+    end.uniq
   end
 end
