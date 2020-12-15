@@ -3,4 +3,8 @@ class Waiter
     @name = name
     @experience = experience
   end
+
+  def self.all
+    @@all
+  end
 end
