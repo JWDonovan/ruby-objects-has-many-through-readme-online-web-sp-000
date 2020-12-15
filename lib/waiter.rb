@@ -23,6 +23,7 @@ class Waiter
 
   def best_tipper
     meals.sort_by(meal.tip)
+    meals.first.tip
   end
 
   def best_tipper
