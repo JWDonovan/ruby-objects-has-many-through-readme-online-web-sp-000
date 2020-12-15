@@ -20,4 +20,8 @@ class Waiter
       meal.waiter == self
     end
   end
+
+  def best_tipper
+    meals.sort_by(meal.tip)
+  end
 end
